@@ -147,7 +147,7 @@ export default {
   },
 };
 </script>
-
+<!-- 
 <style lang="scss">
 .movie__inner {
   ul {
@@ -247,6 +247,148 @@ export default {
     font-family: var(--font-kor);
     -webkit-text-stroke: 1px #000;
     -webkit-text-fill-color: #fff;
+  }
+  h2 {
+    font-size: 40px;
+    color: var(--black);
+    margin-bottom: 70px;
+  }
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  a {
+    color: var(--black);
+  }
+}
+</style> -->
+
+<style lang="scss">
+.movie__inner {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      width: 23%;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+      em {
+        display: block;
+        height: 80px;
+        margin-bottom: 30px;
+        font-family: var(--font-kor);
+      }
+      .title {
+        padding: 5px 0;
+        display: inline-block;
+      }
+      .star {
+        background: #fff;
+        color: #000;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 700;
+      }
+    }
+  }
+  a {
+    color: var(--black);
+  }
+}
+// movieSearch
+.movie__search {
+  margin-bottom: 100px;
+  .container {
+    position: relative;
+  }
+  h2 {
+    color: var(--black);
+    font-size: 40px;
+    text-indent: -9999px;
+    height: 0;
+  }
+  input {
+    background: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 50px;
+    color: var(--black);
+    width: 100%;
+    padding: 14px 30px;
+    font-family: var(--font-kor);
+    margin-top: 20px;
+  }
+  button {
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    z-index: 1000;
+    margin-top: 20px;
+  }
+}
+// movie__popular
+
+body {
+  overflow-x: hidden;
+}
+.popular__inner {
+  .ranking {
+    position: absolute;
+    left: -25px;
+    top: -40px;
+    font-size: 100px;
+    font-family: var(--font-main);
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: #000;
+  }
+  em {
+    display: block;
+    font-family: var(--font-kor);
+  }
+  .title {
+    padding: 5px 0;
+    display: inline-block;
+    font-size: 16px;
+    font-family: var(--font-kor);
+    -webkit-text-stroke: 1px #000;
+    -webkit-text-fill-color: #fff;
+  }
+  .star {
+    background: #000;
+    color: #fff;
+    position: absolute;
+    right: 0px;
+    top: -35px;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
   }
   h2 {
     font-size: 40px;
